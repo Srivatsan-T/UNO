@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>rules</class>
+ <widget class="QMainWindow" name="rules">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Rules</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:red</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="Rules_title">
+    <property name="geometry">
+     <rect>
+      <x>194</x>
+      <y>0</y>
+      <width>381</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>OCR A Extended</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:orange</string>
+    </property>
+    <property name="text">
+     <string>Rules</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPlainTextEdit" name="Rules">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>100</y>
+      <width>701</width>
+      <height>431</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>OCR A Extended</family>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:orange</string>
+    </property>
+    <property name="plainText">
+     <string>
+             Components
+•	112 cards as follows
+•	19 Blue cards -0 to 9
+•	19 Green cards-0 to 9
+•	19 Red cards -0 to 9
+•	19 Yellow cards -0 to 9
+•	8 Skip cards- 2 each in red, blue, green and yellow
+•	8 reverse cards- 2 each in red, blue, green and yellow
+•	8 Skip cards- 2 each in red, blue, green and yellow
+•	8 Draw 2 cards- 2 each in red, blue, green and yellow
+•	4 Wild cards
+•	4 Wild Draw 4 cards
+
+      Setup
+•	The game is for 2-10 players. Every player starts with seven cards, and they are dealt face down. The rest of the cards are placed in a Draw Pile face down. Next to the pile a space should be designated for a Discard Pile. The top card should be placed in the Discard Pile, and the game begins!
+     Game play
+•	Every player views his/her cards and tries to match the card in the Discard Pile.
+•	You have to match either by the number, color, or the symbol/Action. For instance, if the Discard Pile has a red card that is an 8 you have to place either a red card or a card with an 8 on it. You can also play a Wild card (which can alter current color in play).
+•	If the player has no matches or they choose not to play any of their cards even though they might have a match, they must draw a card from the Draw pile. If that card can be played, play it. Otherwise, keep the card, and the game moves on to the next person in turn. You can also play a Wild card, or a Wild Draw Four card on your turn.
+•	 If the first card turned up from the Draw Pile (to form the Discard Pile) is an Action card, the Action from that card applies and must be carried out by the first player (as stated, it is usually the player to the dealer’s left). The exceptions are if a Wild or Wild Draw Four card is turned up.
+•	Take note that you can only put down one card at a time; you cannot stack two or more cards together on the same turn. For example, you cannot put down a Draw Two on top of another Draw Two, or Wild Draw Four during the same turn, or put down two Wild Draw Four cards together.
+•	Announcing “Uno” needs to be repeated every time you are left with one card.
+•	Once a player has no cards remaining, the game round is over.
+
+     Action Cards
+•	Besides the number cards, there are several other cards that help mix up the game. These are called Action or Symbol cards.
+•	Reverse – If going clockwise, switch to counter-clockwise or vice versa. It can only be played on a card that matches by color, or on another Reverse card. If turned up at the beginning of play, the dealer goes first, and the player to the dealer’s right is next (normally it would be the player to the dealer’s left).
+•	Skip – When a player places this card, the next player has to skip their turn. It can only be played on a card that matches by color, or on another Skip card. If turned up at the beginning of play, the first player (to the dealer’s left) loses his/her turn. The next player to that player’s right starts the game instead.
+•	Draw Two – When a person places this card, the next player will have to pick up two cards and forfeit his/her turn. It can only be played on a card that matches by color, or on another Draw Two. If turned up at the beginning of play, the first player draws two cards and gets skipped.
+•	Wild – This card represents all four colors, and can be placed on any card. The player has to state which color it will represent for the next player. It can be played regardless of whether another card is available. If turned up at the beginning of play, the first player chooses what color to continue play.
+•	Wild Draw Four – This acts just like the wild card except that the next player also has to draw four cards as well as forfeit his/her turn. With this card, you must have no other alternative cards to play that matches the color of the card previously played. If you play this card illegally, you may be challenged by the other player to show your hand to him/her. If guilty, you need to draw 4 cards. If not, the challenger needs to draw 6 cards instead. If turned up at the beginning of play, return this card to the Draw pile, shuffle, and turn up a new one.
+   Two player and Four player Rules
+•	For two players, there is a slight change of rules:
+•	Reverse works like Skip
+•	Play Skip, and you may immediately play another card
+•	If you play a Draw Two or Wild Draw Four card, your opponent has to draw the number of cards required, and then play immediately resumes back on your turn.
+
+     </string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

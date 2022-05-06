@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>server_greeting</class>
+ <widget class="QMainWindow" name="server_greeting">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>993</width>
+    <height>699</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>OCR A Extended</family>
+    <pointsize>10</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Server</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:rgb(195, 155, 255)</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QStackedWidget" name="server_stack_widget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>-10</y>
+      <width>961</width>
+      <height>661</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(255, 188, 195)</string>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="page1">
+     <widget class="QLabel" name="Server_connections_label">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>150</y>
+        <width>211</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>OCR A Extended</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>CrossCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(170, 255, 255)</string>
+      </property>
+      <property name="text">
+       <string>Enter Host IP</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="start_server_button">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>370</y>
+        <width>161</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>OCR A Extended</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>CrossCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(85, 255, 255)</string>
+      </property>
+      <property name="text">
+       <string>Start Server</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Submit_button">
+      <property name="geometry">
+       <rect>
+        <x>760</x>
+        <y>370</y>
+        <width>151</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>OCR A Extended</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(85, 255, 255)</string>
+      </property>
+      <property name="text">
+       <string>Start Game</string>
+      </property>
+     </widget>
+     <widget class="QListWidget" name="connections_list">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>330</y>
+        <width>256</width>
+        <height>192</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>OCR A Extended</family>
+        <pointsize>10</pointsize>
+        <weight>50</weight>
+        <italic>true</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(85, 255, 255)</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="server_started_label">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>560</y>
+        <width>261</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>OCR A Extended</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>CrossCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(170, 255, 255)</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="server_title_label">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>20</y>
+        <width>351</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>OCR A Extended</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(170, 255, 255)</string>
+      </property>
+      <property name="text">
+       <string>SERVER</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="host_ip_input">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>150</y>
+        <width>201</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>OCR A Extended</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(170, 255, 255)</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="host_ip_button">
+      <property name="geometry">
+       <rect>
+        <x>760</x>
+        <y>180</y>
+        <width>151</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>OCR A Extended</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(85, 255, 255)</string>
+      </property>
+      <property name="text">
+       <string>Enter</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="port_label">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>250</y>
+        <width>211</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>OCR A Extended</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>CrossCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(170, 255, 255)</string>
+      </property>
+      <property name="text">
+       <string>Enter Port Number</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="port_input">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>250</y>
+        <width>201</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>OCR A Extended</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(170, 255, 255)</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_2">
+     <widget class="QWidget" name="gridLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>20</y>
+        <width>341</width>
+        <height>541</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <property name="verticalSpacing">
+        <number>7</number>
+       </property>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="gridLayoutWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>220</y>
+        <width>201</width>
+        <height>191</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="game_deck_layout">
+       <property name="verticalSpacing">
+        <number>7</number>
+       </property>
+      </layout>
+     </widget>
+     <widget class="QLabel" name="info_label">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>440</y>
+        <width>201</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>OCR A Extended</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(195, 155, 255)</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="add_button">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>580</y>
+        <width>131</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>OCR A Extended</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(195, 155, 255)</string>
+      </property>
+      <property name="text">
+       <string>Add</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="drop_button">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>580</y>
+        <width>131</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>OCR A Extended</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(195, 155, 255)</string>
+      </property>
+      <property name="text">
+       <string>Drop</string>
+      </property>
+     </widget>
+     <widget class="QListWidget" name="player_cards">
+      <property name="geometry">
+       <rect>
+        <x>660</x>
+        <y>280</y>
+        <width>221</width>
+        <height>192</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(195, 155, 255)</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>993</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
